@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045FBC5926C39A0F00B3BA7D /* MVP_Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBC5826C39A0F00B3BA7D /* MVP_Character.swift */; };
+		045FBC5F26C39D6600B3BA7D /* MVP_CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBC5E26C39D6600B3BA7D /* MVP_CharacterPresenter.swift */; };
+		045FBC6126C39D7400B3BA7D /* MVP_CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBC6026C39D7400B3BA7D /* MVP_CharacterViewController.swift */; };
+		045FBC6326C39D9F00B3BA7D /* MVP_CharacterPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBC6226C39D9F00B3BA7D /* MVP_CharacterPresenterProtocol.swift */; };
+		045FBC7526C3AB4800B3BA7D /* Mock_CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBC7426C3AB4800B3BA7D /* Mock_CharacterPresenter.swift */; };
+		045FBC7726C3AD5300B3BA7D /* CharacterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBC7626C3AD5300B3BA7D /* CharacterPresenterTests.swift */; };
 		0488829E266A121200C98A96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488829D266A121200C98A96 /* AppDelegate.swift */; };
 		048882A0266A121200C98A96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488829F266A121200C98A96 /* SceneDelegate.swift */; };
 		048882A2266A121200C98A96 /* AppleMVC_CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048882A1266A121200C98A96 /* AppleMVC_CharacterViewController.swift */; };
@@ -19,7 +25,25 @@
 		048882BA266A1A3500C98A96 /* AppleMVC_Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048882B9266A1A3500C98A96 /* AppleMVC_Character.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		045FBC6C26C3AAEC00B3BA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04888292266A121200C98A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04888299266A121200C98A96;
+			remoteInfo = "Architecture Example";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		045FBC5826C39A0F00B3BA7D /* MVP_Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_Character.swift; sourceTree = "<group>"; };
+		045FBC5E26C39D6600B3BA7D /* MVP_CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_CharacterPresenter.swift; sourceTree = "<group>"; };
+		045FBC6026C39D7400B3BA7D /* MVP_CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_CharacterViewController.swift; sourceTree = "<group>"; };
+		045FBC6226C39D9F00B3BA7D /* MVP_CharacterPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_CharacterPresenterProtocol.swift; sourceTree = "<group>"; };
+		045FBC6826C3AAEC00B3BA7D /* Architecture ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Architecture ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045FBC7426C3AB4800B3BA7D /* Mock_CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock_CharacterPresenter.swift; sourceTree = "<group>"; };
+		045FBC7626C3AD5300B3BA7D /* CharacterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenterTests.swift; sourceTree = "<group>"; };
+		045FBC7826C3ADB200B3BA7D /* Architecture ExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Architecture ExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		0488829A266A121200C98A96 /* Architecture Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Architecture Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0488829D266A121200C98A96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0488829F266A121200C98A96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		045FBC6526C3AAEC00B3BA7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04888297266A121200C98A96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +76,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045FBC5226C3999D00B3BA7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				048882B1266A125B00C98A96 /* MVC_Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045FBC5326C399A300B3BA7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				048882B3266A126000C98A96 /* MVC_CharacterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045FBC5426C399AC00B3BA7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048882B5266A126800C98A96 /* MVC_CharacterController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045FBC5526C399B800B3BA7D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				048882A1266A121200C98A96 /* AppleMVC_CharacterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		045FBC5626C399BD00B3BA7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				048882B9266A1A3500C98A96 /* AppleMVC_Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045FBC5726C399D800B3BA7D /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				045FBC5D26C39D1100B3BA7D /* Protocol */,
+				045FBC5C26C39A2800B3BA7D /* View */,
+				045FBC5B26C39A2100B3BA7D /* Presenter */,
+				045FBC5A26C39A1A00B3BA7D /* Model */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		045FBC5A26C39A1A00B3BA7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045FBC5826C39A0F00B3BA7D /* MVP_Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045FBC5B26C39A2100B3BA7D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				045FBC5E26C39D6600B3BA7D /* MVP_CharacterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		045FBC5C26C39A2800B3BA7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045FBC6026C39D7400B3BA7D /* MVP_CharacterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045FBC5D26C39D1100B3BA7D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				045FBC6226C39D9F00B3BA7D /* MVP_CharacterPresenterProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		045FBC6926C3AAEC00B3BA7D /* Architecture ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				045FBC7826C3ADB200B3BA7D /* Architecture ExampleTests-Bridging-Header.h */,
+				045FBC7426C3AB4800B3BA7D /* Mock_CharacterPresenter.swift */,
+				045FBC7626C3AD5300B3BA7D /* CharacterPresenterTests.swift */,
+			);
+			path = "Architecture ExampleTests";
+			sourceTree = "<group>";
+		};
 		04888291266A121200C98A96 = {
 			isa = PBXGroup;
 			children = (
 				0488829C266A121200C98A96 /* Architecture Example */,
+				045FBC6926C3AAEC00B3BA7D /* Architecture ExampleTests */,
 				0488829B266A121200C98A96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				0488829A266A121200C98A96 /* Architecture Example.app */,
+				045FBC6826C3AAEC00B3BA7D /* Architecture ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,8 +192,9 @@
 			children = (
 				048882BC266A1F1000C98A96 /* StoryBoard */,
 				048882BB266A1F0500C98A96 /* Delegate */,
-				048882B8266A1A0300C98A96 /* Apple MVC */,
 				048882B7266A126F00C98A96 /* MVC */,
+				048882B8266A1A0300C98A96 /* Apple MVC */,
+				045FBC5726C399D800B3BA7D /* MVP */,
 				048882A6266A121300C98A96 /* Assets.xcassets */,
 				048882AB266A121300C98A96 /* Info.plist */,
 			);
@@ -77,9 +204,9 @@
 		048882B7266A126F00C98A96 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				048882B1266A125B00C98A96 /* MVC_Character.swift */,
-				048882B3266A126000C98A96 /* MVC_CharacterView.swift */,
-				048882B5266A126800C98A96 /* MVC_CharacterController.swift */,
+				045FBC5426C399AC00B3BA7D /* Controller */,
+				045FBC5326C399A300B3BA7D /* View */,
+				045FBC5226C3999D00B3BA7D /* Model */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -87,8 +214,8 @@
 		048882B8266A1A0300C98A96 /* Apple MVC */ = {
 			isa = PBXGroup;
 			children = (
-				048882A1266A121200C98A96 /* AppleMVC_CharacterViewController.swift */,
-				048882B9266A1A3500C98A96 /* AppleMVC_Character.swift */,
+				045FBC5626C399BD00B3BA7D /* Model */,
+				045FBC5526C399B800B3BA7D /* ViewController */,
 			);
 			path = "Apple MVC";
 			sourceTree = "<group>";
@@ -114,6 +241,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		045FBC6726C3AAEC00B3BA7D /* Architecture ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045FBC6E26C3AAEC00B3BA7D /* Build configuration list for PBXNativeTarget "Architecture ExampleTests" */;
+			buildPhases = (
+				045FBC6426C3AAEC00B3BA7D /* Sources */,
+				045FBC6526C3AAEC00B3BA7D /* Frameworks */,
+				045FBC6626C3AAEC00B3BA7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045FBC6D26C3AAEC00B3BA7D /* PBXTargetDependency */,
+			);
+			name = "Architecture ExampleTests";
+			productName = "Architecture ExampleTests";
+			productReference = 045FBC6826C3AAEC00B3BA7D /* Architecture ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		04888299266A121200C98A96 /* Architecture Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048882AE266A121300C98A96 /* Build configuration list for PBXNativeTarget "Architecture Example" */;
@@ -137,9 +282,14 @@
 		04888292266A121200C98A96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					045FBC6726C3AAEC00B3BA7D = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+						TestTargetID = 04888299266A121200C98A96;
+					};
 					04888299266A121200C98A96 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -159,11 +309,19 @@
 			projectRoot = "";
 			targets = (
 				04888299266A121200C98A96 /* Architecture Example */,
+				045FBC6726C3AAEC00B3BA7D /* Architecture ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		045FBC6626C3AAEC00B3BA7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04888298266A121200C98A96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,21 +335,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		045FBC6426C3AAEC00B3BA7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045FBC7726C3AD5300B3BA7D /* CharacterPresenterTests.swift in Sources */,
+				045FBC7526C3AB4800B3BA7D /* Mock_CharacterPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04888296266A121200C98A96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				048882A2266A121200C98A96 /* AppleMVC_CharacterViewController.swift in Sources */,
+				045FBC5F26C39D6600B3BA7D /* MVP_CharacterPresenter.swift in Sources */,
 				048882B6266A126800C98A96 /* MVC_CharacterController.swift in Sources */,
 				0488829E266A121200C98A96 /* AppDelegate.swift in Sources */,
 				048882B4266A126000C98A96 /* MVC_CharacterView.swift in Sources */,
 				048882A0266A121200C98A96 /* SceneDelegate.swift in Sources */,
+				045FBC5926C39A0F00B3BA7D /* MVP_Character.swift in Sources */,
+				045FBC6326C39D9F00B3BA7D /* MVP_CharacterPresenterProtocol.swift in Sources */,
 				048882B2266A125B00C98A96 /* MVC_Character.swift in Sources */,
+				045FBC6126C39D7400B3BA7D /* MVP_CharacterViewController.swift in Sources */,
 				048882BA266A1A3500C98A96 /* AppleMVC_Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045FBC6D26C3AAEC00B3BA7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04888299266A121200C98A96 /* Architecture Example */;
+			targetProxy = 045FBC6C26C3AAEC00B3BA7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		048882A3266A121200C98A96 /* Main.storyboard */ = {
@@ -213,6 +392,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		045FBC6F26C3AAEC00B3BA7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F54VR68GM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fomagran.Architecture-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Architecture ExampleTests/Architecture ExampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture Example.app/Architecture Example";
+			};
+			name = Debug;
+		};
+		045FBC7026C3AAEC00B3BA7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F54VR68GM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fomagran.Architecture-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Architecture ExampleTests/Architecture ExampleTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture Example.app/Architecture Example";
+			};
+			name = Release;
+		};
 		048882AC266A121300C98A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,6 +604,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		045FBC6E26C3AAEC00B3BA7D /* Build configuration list for PBXNativeTarget "Architecture ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045FBC6F26C3AAEC00B3BA7D /* Debug */,
+				045FBC7026C3AAEC00B3BA7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04888295266A121200C98A96 /* Build configuration list for PBXProject "Architecture Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

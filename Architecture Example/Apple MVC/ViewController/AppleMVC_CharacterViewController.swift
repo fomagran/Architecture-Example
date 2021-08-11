@@ -8,7 +8,6 @@
 import UIKit
 
 class AppleMVC_CharacterViewController: UIViewController {
-
     
     //전체 모델 데이터
     let characters:[AppleMVC_Character] = [
