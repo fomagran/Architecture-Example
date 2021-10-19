@@ -23,6 +23,10 @@
 		048882B4266A126000C98A96 /* MVC_CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048882B3266A126000C98A96 /* MVC_CharacterView.swift */; };
 		048882B6266A126800C98A96 /* MVC_CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048882B5266A126800C98A96 /* MVC_CharacterController.swift */; };
 		048882BA266A1A3500C98A96 /* AppleMVC_Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048882B9266A1A3500C98A96 /* AppleMVC_Character.swift */; };
+		04DEB20F271E9A7400E8AE7B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEB20E271E9A7400E8AE7B /* Observable.swift */; };
+		04DEB211271E9C5E00E8AE7B /* MVVM_CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEB210271E9C5E00E8AE7B /* MVVM_CharacterViewController.swift */; };
+		04DEB216271E9D1B00E8AE7B /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEB215271E9D1B00E8AE7B /* CharacterViewModel.swift */; };
+		04DEB218271E9D4F00E8AE7B /* MVVM_Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEB217271E9D4F00E8AE7B /* MVVM_Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		048882B3266A126000C98A96 /* MVC_CharacterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVC_CharacterView.swift; sourceTree = "<group>"; };
 		048882B5266A126800C98A96 /* MVC_CharacterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVC_CharacterController.swift; sourceTree = "<group>"; };
 		048882B9266A1A3500C98A96 /* AppleMVC_Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMVC_Character.swift; sourceTree = "<group>"; };
+		04DEB20E271E9A7400E8AE7B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		04DEB210271E9C5E00E8AE7B /* MVVM_CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_CharacterViewController.swift; sourceTree = "<group>"; };
+		04DEB215271E9D1B00E8AE7B /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		04DEB217271E9D4F00E8AE7B /* MVVM_Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +203,7 @@
 				048882B7266A126F00C98A96 /* MVC */,
 				048882B8266A1A0300C98A96 /* Apple MVC */,
 				045FBC5726C399D800B3BA7D /* MVP */,
+				04DEB20D271E9A1500E8AE7B /* MVVM */,
 				048882A6266A121300C98A96 /* Assets.xcassets */,
 				048882AB266A121300C98A96 /* Info.plist */,
 			);
@@ -236,6 +245,41 @@
 				048882A3266A121200C98A96 /* Main.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		04DEB20D271E9A1500E8AE7B /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				04DEB212271E9CD800E8AE7B /* Model */,
+				04DEB213271E9CE200E8AE7B /* View */,
+				04DEB214271E9CE800E8AE7B /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		04DEB212271E9CD800E8AE7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DEB20E271E9A7400E8AE7B /* Observable.swift */,
+				04DEB217271E9D4F00E8AE7B /* MVVM_Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DEB213271E9CE200E8AE7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04DEB210271E9C5E00E8AE7B /* MVVM_CharacterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04DEB214271E9CE800E8AE7B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04DEB215271E9D1B00E8AE7B /* CharacterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,9 +396,13 @@
 				045FBC5F26C39D6600B3BA7D /* MVP_CharacterPresenter.swift in Sources */,
 				048882B6266A126800C98A96 /* MVC_CharacterController.swift in Sources */,
 				0488829E266A121200C98A96 /* AppDelegate.swift in Sources */,
+				04DEB20F271E9A7400E8AE7B /* Observable.swift in Sources */,
+				04DEB211271E9C5E00E8AE7B /* MVVM_CharacterViewController.swift in Sources */,
 				048882B4266A126000C98A96 /* MVC_CharacterView.swift in Sources */,
 				048882A0266A121200C98A96 /* SceneDelegate.swift in Sources */,
+				04DEB216271E9D1B00E8AE7B /* CharacterViewModel.swift in Sources */,
 				045FBC5926C39A0F00B3BA7D /* MVP_Character.swift in Sources */,
+				04DEB218271E9D4F00E8AE7B /* MVVM_Character.swift in Sources */,
 				045FBC6326C39D9F00B3BA7D /* MVP_CharacterPresenterProtocol.swift in Sources */,
 				048882B2266A125B00C98A96 /* MVC_Character.swift in Sources */,
 				045FBC6126C39D7400B3BA7D /* MVP_CharacterViewController.swift in Sources */,

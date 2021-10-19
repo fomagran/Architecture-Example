@@ -20,7 +20,7 @@ class MVP_CharacterPresenter:MVP_CharacterPresenterProtocol {
     
     var character: MVP_Character?
     
-    var index:Int = 0
+    var index:Int = 3
     
     func incrementIndex() {
         //이전 인덱스로 변경

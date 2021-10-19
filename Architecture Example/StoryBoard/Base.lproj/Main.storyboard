@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmn-O6-OhQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RHb-VN-ysO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -314,6 +314,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIA-jC-mzO" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1730" y="90"/>
+        </scene>
+        <!--Character View Controller-->
+        <scene sceneID="F16-Ep-H0f">
+            <objects>
+                <viewController id="RHb-VN-ysO" customClass="MVVM_CharacterViewController" customModule="Architecture_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKf-nB-emb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스폰지밥" translatesAutoresizingMaskIntoConstraints="NO" id="9ax-YE-pki">
+                                <rect key="frame" x="87" y="164" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Sc9-b8-naq"/>
+                                    <constraint firstAttribute="width" constant="240" id="rz4-FM-VNp"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZIV-rN-Amg">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugj-tB-7ri">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="60"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="snL-cf-ePZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Previous">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapPreviousButton:" destination="RHb-VN-ysO" eventType="touchUpInside" id="K7a-k3-3ok"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fun-Ua-Tjc">
+                                        <rect key="frame" x="212" y="0.0" width="202" height="60"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qhf-PG-nM1"/>
+                                        </constraints>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapNextButton:" destination="RHb-VN-ysO" eventType="touchUpInside" id="WEz-6z-TPg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bia-4C-Sn6"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S6l-1J-hMa">
+                                <rect key="frame" x="87" y="464" width="97.5" height="101.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별: 남" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyV-Me-fZt">
+                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름: 스폰지밥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyF-BG-QeZ">
+                                        <rect key="frame" x="0.0" y="40.5" width="97.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국적: 미국" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21t-bR-mNq">
+                                        <rect key="frame" x="0.0" y="81" width="97.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tBI-E5-jSD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9ax-YE-pki" firstAttribute="centerX" secondItem="tBI-E5-jSD" secondAttribute="centerX" id="1lD-Kk-BZl"/>
+                            <constraint firstItem="S6l-1J-hMa" firstAttribute="leading" secondItem="9ax-YE-pki" secondAttribute="leading" id="BGk-g5-r0w"/>
+                            <constraint firstItem="9ax-YE-pki" firstAttribute="top" secondItem="tBI-E5-jSD" secondAttribute="top" constant="120" id="BzH-8k-XrI"/>
+                            <constraint firstItem="ZIV-rN-Amg" firstAttribute="leading" secondItem="tBI-E5-jSD" secondAttribute="leading" id="F0O-f0-Te7"/>
+                            <constraint firstItem="tBI-E5-jSD" firstAttribute="bottom" secondItem="ZIV-rN-Amg" secondAttribute="bottom" id="K9a-7l-epz"/>
+                            <constraint firstItem="tBI-E5-jSD" firstAttribute="trailing" secondItem="ZIV-rN-Amg" secondAttribute="trailing" id="nYD-km-Hex"/>
+                            <constraint firstItem="S6l-1J-hMa" firstAttribute="top" secondItem="9ax-YE-pki" secondAttribute="bottom" constant="60" id="odT-ui-WqK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BLF-1r-fXk"/>
+                    <connections>
+                        <outlet property="country" destination="21t-bR-mNq" id="d80-5Q-5jq"/>
+                        <outlet property="gender" destination="yyV-Me-fZt" id="PjO-QG-m54"/>
+                        <outlet property="image" destination="9ax-YE-pki" id="vhX-mD-94n"/>
+                        <outlet property="name" destination="zyF-BG-QeZ" id="c7U-gr-utZ"/>
+                        <outlet property="nextButton" destination="Fun-Ua-Tjc" id="giS-VA-cgA"/>
+                        <outlet property="previousButton" destination="ugj-tB-7ri" id="a2c-FA-fR6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7I-CE-YxE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2500" y="90"/>
         </scene>
     </scenes>
     <resources>
